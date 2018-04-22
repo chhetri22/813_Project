@@ -1,0 +1,103 @@
+.item img {
+    background:url(https://i.imgur.com/kgWkA7K.png) no-repeat center center;
+    background-size:100% auto;
+}
+
+.carousel {
+    margin-top: 100px;
+}
+
+.text_top {
+    margin-top: 40px;
+}
+
+#resource_list {
+    margin: auto;
+    padding: 50px;
+}
+
+/*For list*/
+
+
+#resource_list ul {
+  list-style-type: none;
+  width: 1000px;
+}
+
+#resource_list h3 {
+  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+#resource_list li img {
+  float: left;
+  margin: 0 15px 0 0;
+}
+
+#resource_list li p {
+  font: 200 12px/1.5 Georgia, Times New Roman, serif;
+}
+
+#resource_list li {
+  padding: 20px;
+  overflow: auto;
+}
+
+#resource_list li:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+/*for columns*/
+
+.row {
+    display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+/*
+.column {
+    flex: 50%;
+    padding: 10px;
+    height: 300px; 
+}
+*/
+
+/*Star*/
+
+.checked {
+    color: orange;
+    
+}
+
+ul {
+    columns: 2;
+}
+
+#facebook_top {
+}
+
+p {
+    display: block;
+}
+
+#facebook_top #twitter_top {
+    padding: 50px;
+}
+
+
+#search_button{
+    background-color: white;
+    color: black;
+}
+
+html, body {
+    max-width: 100%;
+}
+.input-group{
+    max-width: 500px;
+    margin-right: 45px;
+}
+
+.text_top {
+    padding: 20px;
+}

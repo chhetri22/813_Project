@@ -1,0 +1,152 @@
+<html>
+<head>
+
+    <!--Stars-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"     integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="import" href="nav.html" id="nav_templates">
+    <script src="../scripts/resources.js"></script>
+    <link rel="stylesheet" href="../css/resources.css">
+</head>
+
+<body>
+    <div class="container">
+
+
+    <div class="navigationBar sticky-top" id="nav_bar_div">
+
+</div>
+        <div class="main">
+
+    <div id="carouselExampleControls" class="carousel slide container" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="../images/mind.png" alt="Second slide">
+            </div>
+            <div class="carousel-item ">
+                <img class="d-block w-100" src="../images/medlinks.png" alt="First slide">
+            </div>
+
+            <div class="carousel-item">
+                <img class="d-block w-100" src="../images/mental_health.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="../images/lean_on.png" alt="Forth slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="../images/activeminds.png" alt="Forth slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="row">
+
+    <div id="resource_list">
+
+        <h1 class="text_top" align="center">Resources on Campus</h1>
+
+        <div>
+          <ul>
+            <li data-toggle="modal" data-target="#exampleModalCenter">
+              <img src="https://secureimg.stitcher.com/feedimagesplain328/52737.jpg" height="100px" width="100px">
+              <h3>MIT Medical</h3>
+              <p>MIT Medical serves the healthcare needs of the MIT community.</p>
+            </li>
+
+            <li data-toggle="modal" data-target="#exampleModalCenter">
+              <img src="https://medical.mit.edu/sites/default/files/styles/square_thumbnail/public/mentalhealth_icons_birds-01_0.png?itok=qzhPLU9l" height="100px" width="100px">
+              <h3>MIT Mental Health And Counseling</h3>
+              <p>MIT Medical's Mental Health and Counseling Service works with students to identify, understand, and solve problems, and to help transform that understanding into positive action. </p>
+            </li>
+
+            <li data-toggle="modal" data-target="#exampleModalCenter">
+              <img src="data:image/jpeg;base64,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" height="100px" width="100px">
+              <h3>Active Minds</h3>
+              <p>Active Mind's vision is to de-stigmatize mental illness by promoting an open, enlightened discussion of mental health issues, and to create a better life for all who suffer</p>
+            </li>
+
+            <li data-toggle="modal" data-target="#exampleModalCenter">
+              <img src="https://peerears.mit.edu/sites/default/files/images/peerearslogo.png" height="100px" width="100px">
+              <h3>Peer Ears</h3>
+              <p>Peer Ears is a residence-based mental health support network.</p>
+            </li>
+              
+            <li data-toggle="modal" data-target="#exampleModalCenter">
+              <img src="https://ems.mit.edu/wp-content/themes/mit-ems/images/logo.png" height="100px" width="100px">
+              <h3>MIT EMT</h3>
+              <p>MIT Emergency Medical Services is a student-run BLS transporting ambulance service, supported by MIT Medical.</p>
+            </li>
+
+            <li data-toggle="modal" data-target="#exampleModalCenter">
+              <img src="http://refs.mit.edu/images/refs_logo2.png" height="100px" width="100px">
+              <h3>MIT Refs</h3>
+              <p>REFS (Resources for Easing Friction and Stress) programs are for peer support within the Institute.</p>
+            </li>
+              
+              
+          </ul>
+        </div>
+
+    </div>
+
+    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLongTitle" >Active Minds
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </h2>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+            <div class="grid_12 content">
+                <h2>we are</h2>
+                <p>A student-led initiative for better health and wellness, stress relief, and health education</p>
+                <p>Students who use peer-to-peer outreach for health advocacy and education with a focus on mental health</p>
+                <p>A liaison between students and the administration/mental health community</p>
+                <p>A national organization founded in 2001 with 200+ chapters worldwide</p>
+                <p>A 5-star chapter for two consecutive years</p>
+                <p>A resource for you, by you</p>
+                <br />
+
+                <a href="https://www.facebook.com/activemindsatmit" target="_blank"><img id="facebook_top" src="http://activeminds.mit.edu/images/facebook.png" height="50" width="50" /></a>
+                <a href="https://twitter.com/ActiveMindsMIT" target="_blank"><img id="twitter_top" src="http://activeminds.mit.edu/images/twitter.png" height="50" width="50" /></a>
+            </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+</body>
+</html>

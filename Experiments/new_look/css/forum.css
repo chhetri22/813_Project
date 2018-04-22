@@ -1,0 +1,20 @@
+html, body {
+    max-width: 100%;
+}
+.input-group{
+    max-width: 500px;
+    margin-right: 5px;
+}
+.form-control{
+    margin-right: 5px;
+}
+.dropdown-item{
+    width:fit-content;
+
+}
+
+.active{
+    border-right-color: black;
+    border-right-width: 1px;
+
+}

@@ -1,0 +1,10 @@
+.item img {
+  background:url(http://bgslinc.com/wp-content/uploads/2015/03/bgsl-landscape.jpg) no-repeat center center;
+  background-size:100% auto;
+}
+@media(max-width:800px){
+  .item img {
+    background-size:800px 300px;
+    min-height: 300px;
+  } 
+}

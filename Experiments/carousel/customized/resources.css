@@ -1,0 +1,72 @@
+.item img {
+    background:url(https://i.imgur.com/kgWkA7K.png) no-repeat center center;
+    background-size:100% auto;
+}
+@media(max-width:800px){
+    .item img {
+        background-size:800px 300px;
+        min-height: 300px;
+    }
+}
+
+#myCarousel {
+    margin: 20px;
+    margin-top: 100px;
+    height: 400px;
+}
+
+.text_top {
+    margin: 20px;
+    margin-top: 40px;
+}
+
+#resource_list {
+    padding-left: 40px;
+}
+
+/*For list*/
+
+div {
+  margin: 20px;
+}
+
+ul {
+  list-style-type: none;
+  width: 500px;
+}
+
+h3 {
+  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+li img {
+  float: left;
+  margin: 0 15px 0 0;
+}
+
+li p {
+  font: 200 12px/1.5 Georgia, Times New Roman, serif;
+}
+
+li {
+  padding: 10px;
+  overflow: auto;
+}
+
+li:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+/*for columns*/
+
+.row {
+    display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+    flex: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}

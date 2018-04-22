@@ -1,0 +1,120 @@
+html, body {
+	max-width: 100%;
+}
+.input-group{
+	max-width: 500px;
+	margin-right: 45px;
+}
+
+.dropdown-item{
+	width:fit-content;
+
+}
+
+.active{
+	border-right-color: black;
+	border-right-width: 1px;
+
+}
+
+#search_button{
+	background-color: white;
+	color: black;
+}
+
+.sticky-top {
+	top: 0.1em;
+}
+
+
+.container {
+	height: 100vh;
+	width: 100vw;
+	padding: 0px;
+}
+
+
+.main {
+	display: flex;
+	flex-direction: row;
+}
+
+.filters {
+	flex: 1;
+
+}
+
+.filter-by {
+	font-size: 1.2em;
+	margin-top: 5%;
+	margin-left: 5%;
+	color: #767676;
+	font-size: 17px!important;
+    line-height: 1.255!important;
+}
+
+.filter-categories {
+	display: flex;
+	flex-direction: column;
+}
+
+.category {
+	margin: 2px;
+	display: flex;
+	align-items: center;
+}
+
+
+.a-checkbox-label {
+	position: relative;
+	padding-left: 5px;
+	text-indent: 0;
+	display: inline-block;
+}
+.a-checkbox label {
+	font-weight: 400;
+}
+
+input[type=checkbox] {
+	height: 15px;
+	width: 15px;
+	vertical-align: top;
+	position: relative;
+	bottom: -4px;
+}
+
+.filters li {
+	display: list-item;
+	list-style: none;
+}
+
+.posts {
+	flex: 3;
+}
+
+.card{
+	margin-bottom: 3%;
+	margin-left: 2.4%;
+	margin-right: 2.4%;
+}
+
+.card-title a {
+	color: #000000;
+	font-family: 'q_serif',Georgia,Times,"Times New Roman","Hiragino Kaku Gothic Pro","Meiryo",serif;
+	font-weight: bold;
+}
+
+.card-title a:hover {
+	border-bottom: 1px solid #000000;
+}
+
+.addPostPrompt {
+	background-color: #fff;
+	color: #90949c;
+	border: 1px solid rgba(0,0,0,.125);
+	border-radius: 0.25rem;
+	margin: 2%;
+	position: relative;
+	width: auto;
+
+}

@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+		<link rel="stylesheet" href="../css/forum.css">
+		<link rel="import" href="nav.html" id="nav_templates">
+
+		<!-- Javascript -->
+		<script src="../scripts/reply.js"></script>
+		<script src="../scripts/post.js"></script>
+		<script src="../scripts/forum.js"></script>
+		<script src="../scripts/forumInterface.js"></script>
+
+		<!-- Jquery -->
+		<script src="../scripts/jquery-3.3.1.min.js"
+
+
+		<title>Forum</title>
+
+		<script>
+
+		</script>
+	</head>
+
+	<body>
+		<div class="container">
+			<!-- Navigation bar -->
+			<div class="navigationBar sticky-top" id="nav_bar_div"></div>
+
+			<!-- Main page -->
+			<div class = "main">
+				<div class="filters">
+					<h3 class="filter-by">Filter by</h3>
+					<div class = "filter-categories">
+						<ul>
+							<li>
+								<div class="a-checkbox">
+									<label>
+										<input type="checkbox" name="depression">
+										<span class="a-label a-icon-checkbox">Depression</span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="a-checkbox">
+									<label>
+										<input type="checkbox" name="anxiety">
+										<span class="a-label a-icon-checkbox">Social Anxiety</span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="a-checkbox">
+									<label>
+										<input type="checkbox" name="stress">
+										<span class="a-label a-icon-checkbox">Stress</span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="a-checkbox">
+									<label>
+										<input type="checkbox" name="imposter syndrome">
+										<span class="a-label a-icon-checkbox">Imposter Syndrome</span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="a-checkbox">
+									<label>
+										<input type="checkbox" name="academics">
+										<span class="a-label a-icon-checkbox">Academics</span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="a-checkbox">
+									<label>
+										<input type="checkbox" name="relationships">
+										<span class="a-label a-icon-checkbox">Relationships</span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="a-checkbox">
+									<label>
+										<input type="checkbox" name="other">
+										<span class="a-label a-icon-checkbox">Other</span>
+									</label>
+								</div>
+							</li>
+						</ul>
+						
+						<!-- <div class="category"><input id= "anxiety" type="checkBox"><label for="anxiety">Anxiety</label></div> -->
+						<!-- <div class="category"><input id= "depression" type="checkBox"><label for="depression">Depression</label></div>
+						<div class="category"><input id= "stress" type="checkBox"><label for="stress">Stress</label></div>
+						<div class="category"><input id= "academics" type="checkBox"><label for="academics">Academics</label></div>
+						<div class="category"><input id= "imposterSyndrome" type="checkBox"><label for="imposterSyndrome">Imposter Syndrome</label></div>
+						<div class="category"><input id= "relationships" type="checkBox"><label for="relationships">Relationships</label></div>
+						<div class="category"><input id= "others" type="checkBox"><label for="others">Others</label></div> -->
+					</div>
+				</div>
+
+				<div class="posts">
+
+					<div >
+						<div class="card-body addPostPrompt">
+							<div id="exampleFormControlTextarea3" rows="7">What's is on your mind, Suman?</div> 
+							<div id="postIt"></div>
+							<!-- <label for="exampleFormControlTextarea3">Rounded corners</label>
+							<textarea class="form-control" id="exampleFormControlTextarea3" rows="7"></textarea> -->
+						</div>
+
+						<div id = "otherPosts">
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+			<!-- Reply Pop Up -->
+			<div class="modal fade" id="replyPopUp" tabindex="-1" role="dialog" aria-labelledby="replyModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="replyModalLabel">Your Reply</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<textarea id = "replyTextArea" name="textarea" style="width:100%;height:100%;"></textarea>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							<button id= "replyPopUpButton" type="button" class="btn btn-primary" data-dismiss="modal" >Reply</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Post Pop Up -->
+			<div class="modal fade" id="postPopUp" tabindex="-1" role="dialog" aria-labelledby="postModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="postModalLabel">What's on your mind?</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<label for="chosePostTitle">Title:  </label>
+    						<input type="text" id="chosePostTitle" style = "width:88%">
+
+							<textarea id = "postTextArea" name="textarea" style="width:100%;height:100%;"></textarea>
+							
+							<div id="chosePostFilters">Apply tags: 
+								<br>
+
+								<input type="checkbox" id="postAnxietyFilter" name="social anxiety" >
+								<label for="postAnxietyFilter">Anxiety</label>
+
+								<input type="checkbox" id="postDepressionFilter" name="depression" >
+								<label for="postDepressionFilter">Depression</label>
+
+								<input type="checkbox" id="postRelationshipsFilter" name="relationships" >
+								<label for="postRelationshipsFilter">Relationships</label>
+
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							<button id= "postPopUpButton" type="button" class="btn btn-primary" data-dismiss="modal">Post</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+		</div>
+	</body>
+</html>
